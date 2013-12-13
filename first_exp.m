@@ -1,4 +1,4 @@
-function Yexp=frst_exp()
+function Yexp=first_exp()
 
 t=0;
 h=0.1;
@@ -31,7 +31,7 @@ for t=1:10:500
         %Yexp(i)=y(t)+NOISE(i);
         %i=i+1;
         ymax = abs(max(y));
-        disp(ymax);
+        %disp(ymax);
         delta = 0.05 * ymax;
         white_noise(i) = rand*delta;
         Yexp(i) = y(t) + white_noise(i);

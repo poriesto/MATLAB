@@ -1,9 +1,9 @@
 Ye=first_exp;
-b1=3;
-b3=5;
+b1=0;
+b3=9;
 
 k=1;
-kmax=100;
+kmax=10000;
 h=0.01; 
 b1trace=[b1];
 b3trace=[b3];
@@ -43,6 +43,7 @@ while k < kmax
 end;
 
 figure
+plot(CF);
 plot(Ye);
 hold on;
 plot(Ym);

@@ -42,8 +42,15 @@ while k < kmax
 
 end;
 
-figure
+figure(1)
 plot(CF);
+saveas(gcf, 'CF', 'bmp');
+%plot(Ye);
+%plot(Ym);
+figure(2)
 plot(Ye);
-hold on;
+saveas(gcf, 'Ye', 'bmp');
+figure(3)
 plot(Ym);
+saveas(gcf, 'Ym', 'bmp');
+hold on;
